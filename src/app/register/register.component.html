@@ -1,0 +1,27 @@
+<div id="particles-js">
+    <!-- <div class="animated bounceInDown" id="side"> -->
+    <div class="container">
+        <span class="error animated tada" id="msg"></span>
+        <form name="form1" class="box" >
+            <h4>Register <span>Dashboard</span></h4><br>
+            <h5>Register in to your account.</h5>
+            <input type="text" [(ngModel)]="uname" name="username"  placeholder="Username" autocomplete="off">
+
+            <input type="tel" [(ngModel)]="phnum" name="phonenumber"  placeholder="Phone Number" autocomplete="off">
+
+            <input type="email" [(ngModel)]="gmail"  name="email" placeholder="Email" autocomplete="off">
+            <i class="typcn typcn-eye" id="eye"></i>
+            <input type="password" [(ngModel)]="pswd" name="password" placeholder="Passsword" id="pwd1" autocomplete="off">
+            <label>
+                <input type="checkbox">
+                <span></span>
+                <small class="rmb">Remember me</small>
+            </label>
+            <a href="#" class="forgetpass">Forget Password?</a>
+            <input type="submit" (click)="register()" value="Sign in" class="btn1">
+        </form>
+        <a routerLink="" class="dnthave">I have an account? Login </a>
+    </div>
+
+    <!-- </div> -->
+</div>
